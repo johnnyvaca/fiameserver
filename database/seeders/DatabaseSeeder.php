@@ -26,5 +26,19 @@ class DatabaseSeeder extends Seeder
                 'password' => '$2y$10$vkKbzAx/xtRnmb9k/jcH/.Ka8iEGBZGqZIhFTcHC.yKSu8w0GjzVO'
             ]
         ]);
+        DB::table('products')->insert([
+            [
+                'name' => 'Lasagne',
+                'selling_date' => '2022-04-01',
+                'price' => 10,
+                'user_id' => 1
+            ],
+            [
+                'name' => 'Couscous',
+                'selling_date' => '2022-04-11',
+                'price' => 12,
+                'user_id' => 2
+            ],
+        ]);
     }
 }
